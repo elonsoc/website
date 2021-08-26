@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: -50vw;
+    margin-left: -40vw;
     
 }
 
@@ -29,7 +29,7 @@ body {
 
 #logo-container img {
     animation: rotation 30s infinite linear;
-    min-width: 120%;
+    min-width: 130%;
 }
 
 @keyframes rotation {
