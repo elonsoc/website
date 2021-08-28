@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>{{ .Title }}</title>
+		<link rel="stylesheet" href="../../css/post.css">
+		<link rel="stylesheet" href="https://use.typekit.net/tdk2mpb.css">
+	</head>
 	<body>
+		{{ partial "header.html" .}}
 		<article class="a-single">
-			<header class="post-matter">
-				<aside>
-					<time>{{ .Date.Format "January 2, 2006"}}</time>
-					{{ if or .Params.Author site.Author.name }}
-					<span>{{ .Params.Author | default site.Author.name}}</span>
-					{{ end }}
-
-				</aside>
+			<aside>
+				<a href="{{.Site.BaseURL}}/{{.Section}}">&#8592; Return</a>
+				{{ if or .Params.Author site.Author.name }}
+				{{ .Params.Author | default site.Author.name}}
+				{{ end }}
+				<time>{{ .Date.Format "January 2, 2006"}}</time>
+			</aside>
+				
+			<section class="post-content">
 				<h1> {{ .Title }}</h1>
-			</header>
-			<section class="post-content">{{ .Content }}</section>
+				{{ .Content }}
+			</section>
 		</article>
+		{{ partial "footer.html"}}
 	</body>
 </html>
