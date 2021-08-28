@@ -1,0 +1,6 @@
+<ul>
+    {{ range .Site.RegularPages  }}
+    <li><span><a href="{{ .Permalink}}"></a>{{ .Title }}</a>
+    </span></li>
+    {{ end }}
+</ul>

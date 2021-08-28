@@ -18,8 +18,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: -40vw;
-    
+
+    min-width: 20vw;
 }
 
 #text-container {

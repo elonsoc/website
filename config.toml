@@ -1,0 +1,4 @@
+baseURL = "https://elonsoc.org"
+languageCode = "en-us"
+title = "Elon Society of Computing"
+theme="ESC"

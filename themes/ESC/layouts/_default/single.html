@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<article class="a-single">
+	<header class="post-matter">
+		<aside>
+			<time>{{ .Date.Format "January 2, 2006"}}</time>
+			{{ if or .Params.Author site.Author.name }}
+			<span>{{ .Params.Author | default site.Author.name}}</span>
+			{{ end }}
+
+		</aside>
+		<h1> {{ .Title }}</h1>
+	</header>
+	<section class="post-content">{{ .Content }}</section>
+</article>
+{{ end }}

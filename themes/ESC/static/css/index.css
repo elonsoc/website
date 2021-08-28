@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns:  0fr 1fr;
+    min-width: 100vw;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    min-width: 20vw;
+}
+
+#text-container {
+
+    margin-right: 2vw;
+}
+
+#logo-container img {
+    animation: rotation 30s infinite linear;
+    min-width: 130%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+     to {
+         transform: rotate(359deg);
+     }
+}
+
+#brick-footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+p {
+    color: white;
+    font-family: termina;
+    font-weight: 700;
+    font-size: 02.7vh;
+    text-align: right;
+}
+
