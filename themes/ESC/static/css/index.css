@@ -3,7 +3,9 @@ body {
     padding: 0;
     margin: 0;
 }
+
 #main-container  {
+
     background-color: black;
     min-height: 96vh;
     overflow: hidden;
@@ -17,6 +19,7 @@ body {
 
     margin-right: 2vw;
 }
+
 #logo-container img {
     animation: rotation 30s infinite linear;
 
