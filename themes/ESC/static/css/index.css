@@ -1,9 +1,13 @@
 body {
     background-color: black;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#main-container  {
+    background-color: black;
+    min-height: 96vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -13,7 +17,6 @@ body {
 
     margin-right: 2vw;
 }
-
 #logo-container img {
     animation: rotation 30s infinite linear;
 
@@ -33,15 +36,18 @@ body {
 }
 
 #brick-footer {
-    position: absolute;
-    bottom: 1vh;
+    min-height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-p {
+/* p {
     color: white;
     font-family: termina;
     font-weight: 700;
     font-size: 02.7vh;
     text-align: right;
-}
+} */
 
