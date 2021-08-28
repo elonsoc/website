@@ -8,6 +8,19 @@ body {
     justify-content: center;
 }
 
+#container {
+    display: grid;
+    grid-template-columns:  0fr 1fr;
+    min-width: 100vw;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    min-width: 20vw;
+}
 
 #text-container {
 
@@ -16,11 +29,7 @@ body {
 
 #logo-container img {
     animation: rotation 30s infinite linear;
-
-}
-
-#logo-container img:hover {
-    animation-play-state: paused;
+    min-width: 130%;
 }
 
 @keyframes rotation {
