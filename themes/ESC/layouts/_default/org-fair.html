@@ -5,14 +5,19 @@
         <link rel="stylesheet" href="https://use.typekit.net/tdk2mpb.css">
     </head>
     <body>
-
+        <div id="container">
             <div id="logo-container">
-                <a href="https://elon.campuslabs.com/engage/organization/elonsocietyofcomputing" rel="noopener nofollow noreferrer" target="_blank">
                 <img src="../assets/logo.svg">
             </div>
-
+            <div id="text-container">
+                <p>Thanks for visting<br/>us at the Org Fair!</p>
+                <p>Our first meeting is<br/>September 1st<br/>in Duke 101 at<br/>6:30pm.</p>
+                <p style="font-size: 1.5vh; color:gray;">(There will be pizza,<br/>for sure.)</p>
+            </div>
+    </div>
     <div id="brick-footer">
         <img src="../assets/esc-brick.svg">
     </div>
     </body>
+    {{ .Content }}
 </html>
