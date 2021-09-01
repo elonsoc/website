@@ -9,7 +9,7 @@
 		{{ partial "header.html" .}}
 		<article class="a-single">
 			<aside>
-				<a href="{{.Site.BaseURL}}/{{.Section}}">&#8592; Return</a>
+				<!-- <a href="{{.Site.BaseURL}}/{{.Section}}">&#8592; Return</a> -->
 				{{ if or .Params.Author site.Author.name }}
 				{{ .Params.Author | default site.Author.name}}
 				{{ end }}
@@ -17,10 +17,13 @@
 			</aside>
 				
 			<section class="post-content">
-				<h1> {{ .Title }}</h1>
+				<h1>{{ .Title }}</h1>
 				{{ .Content }}
 			</section>
+			
 		</article>
+		
 		{{ partial "footer.html"}}
+		<p> See a mistake or want to make an edit? make a pull request for this post <a href="https://github.com/elonsoc/website/tree/master/content/{{ .File.Path }}">here</a>.</p>
 	</body>
 </html>
