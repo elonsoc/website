@@ -10,10 +10,18 @@ body {
     min-height: 96vh;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white; 
+    font-family: termina;
+    text-align: center;
 }
 
+span {
+    border: blue;
+    border-width: 10px;
+}
 
 #text-container {
 
