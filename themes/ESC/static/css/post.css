@@ -10,12 +10,22 @@ body {
 
 aside{ 
     background-color: black; 
-    display: flex; 
+    display: none;
+
     flex-direction: column;
     text-align: right;
     padding-right: 1vw;
     
 }
+
+@media only screen and (min-width: 600px) {
+    aside {
+        display: flex;
+    }
+    .post-content {
+        max-width: 40vw;
+    }
+} 
 
 article {
     display: flex;
@@ -25,8 +35,12 @@ article {
     margin-top: 1vh;
 }
 
+h2, h3 {
+    text-decoration: underline;
+}
+
 h1 {
-    font-size: 41px;
+    font-size: 3vh;
     line-height: 0vw;
 }
 
@@ -53,5 +67,5 @@ a.nav-link:link {
     background-color: rgb(51,51,51);
     border-radius: 25px;
     padding: 2%;
-    max-width: 40vw;
+    min-width: 40vw;
 }

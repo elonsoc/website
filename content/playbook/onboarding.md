@@ -18,7 +18,7 @@ We are dedicated to ESC's mission and projects. Members will regularly attend cl
 
 
 ### Inclusion
-ESC is open to any student interested in Computer Science and willing to learn, work, and challenge themselves. As developers, learning is a lifetime journey--ESC welcomes all levels of experience with diverse backgrounds. 
+ESC is open to any student interested in Computer Science and willing to learn, work, and challenge themselves. As developers, learning is a lifetime journey--ESC welcomes all levels of experience and all backgrounds.
 
 ### Communication
 Efficient communication is the key to a successful agile development team. We give constructive feedback to each other's work through code reviews, stand-up meetings, etc. 
