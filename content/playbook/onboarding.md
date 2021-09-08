@@ -35,7 +35,7 @@ We leverage the following tools to stay organized and efficient with our project
 Github will serve as a repository of all ESC's projects. Individual tasks will be delegated and tracked "issues" on GitHub. You can access our public github organization [here](https://github.com/elonsoc/).
 
 ### Discord
-ESC uses Discord to communicate, give quick updates, or have virtual meetings. Our members are expected to regularly check messages and respond promptly. Efficient communication is critical to our project's success. To join our Discord, you must be a member of our Phoenix Connect page which you can request membership [here](https://elon.campuslabs.com/engage/organization/elonsocietyofcomputing). Once approved, ping [Jumar Martin](mailto:jmartin57@elon.edu) or [Kai Bilotta](mailto:kbi9lotta@elon.edu) for an invite.
+ESC uses Discord to communicate, give quick updates, or have virtual meetings. Our members are expected to regularly check messages and respond promptly. Efficient communication is critical to our project's success. To join our Discord, you must be a member of our Phoenix Connect page which you can request membership [here](https://elon.campuslabs.com/engage/organization/elonsocietyofcomputing). Once approved, ping [Jumar Martin](mailto:jmartin57@elon.edu) or [Kai Bilotta](mailto:kbilotta@elon.edu) for an invite.
 
 
 3.1 Meetings
