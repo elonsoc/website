@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ .Title }}</title>
-		<link rel="stylesheet" href="../../css/post.css">
-		<link rel="stylesheet" href="https://use.typekit.net/tdk2mpb.css">
-	</head>
-	<body>
-		{{ partial "header.html" .}}
-		<article class="a-single">
-			<aside>
-				<!-- <a href="{{.Site.BaseURL}}/{{.Section}}">&#8592; Return</a> -->
-				{{ if or .Params.Author site.Author.name }}
-				{{ .Params.Author | default site.Author.name}}
-				{{ end }}
-				<time>{{ .Date.Format "January 2, 2006"}}</time>
-			</aside>
-				
-			<section class="post-content">
-				<h1>{{ .Title }}</h1>
-				{{ .Content }}
-			</section>
-			
-		</article>
-		
-		{{ partial "footer.html"}}
-		<p> See a mistake or want to make an edit? make a pull request for this post <a href="https://github.com/elonsoc/website/tree/master/content/{{ .File.Path }}">here</a>.</p>
-	</body>
+
+<head>
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tdk2mpb.css">
+
+</head>
+
+<body>
+
+    <div class="nav-header">
+        {{ partial "header.html" .}}
+    </div>
+    <article>
+        <section class="header">
+            <h1>{{ .Title }}</h1>
+            <time>{{ .Date.Format "January 2, 2006"}}</time>
+            <div class="author-info">
+                {{ if or .Params.Author site.Author.name }} {{ .Params.Author | default site.Author.name}} {{ end }}
+            </div>
+        </section>
+
+        <section>
+            {{ .Content }}
+        </section>
+
+        <div style="padding: 0.5rem; border: 1px; border-color: #ccc; border-style:dashed;">
+            <p style="color: #ccc;"> See a mistake or want to make an edit? make a pull request for this post <a href="https://github.com/elonsoc/website/tree/master/content/{{ .File.Path }}">here</a>.</p>
+        </div>
+    </article>
+    {{ partial "footer.html"}}
+
+</body>
+
 </html>

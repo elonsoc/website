@@ -1,8 +1,6 @@
-
-
 <ul>
-    {{ range .Site.RegularPages  }}
-    <li><span><a href="{{ .Permalink}}"></a>{{ .Title }}</a>
+    {{ range .Paginator.Pages }}
+    <li><span><a href="{{ .Permalink}}">{{ .Title }}</a>
     </span></li>
     {{ end }}
 </ul>
